@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="25dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialogPassText"
+        android:textColor="@color/purple"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/currpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/currentpass_hint"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:passwordToggleEnabled="true" />
+
+    <EditText
+        android:id="@+id/newpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/newpass_hint"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:passwordToggleEnabled="true" />
+
+    <Button
+        android:id="@+id/updatepass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/updatePass"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
